@@ -14,6 +14,10 @@ public class Demo4Application {
 
 		ApplicationContext context=new ClassPathXmlApplicationContext("config.xml");
 		Person p= (Person)context.getBean("person");
+
+		Addition a=(Addition)context.getBean("add");
+		System.out.println(a);
+
 		System.out.println(p);
 
 	}

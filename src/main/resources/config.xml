@@ -22,6 +22,11 @@
 
     </bean>
 
+<!--    So taking the integer type constructor if we define the type and index implies sending that value to that index as paramters in constructor-->
+    <bean class="com.example.demo4.Addition" name="add">
+        <constructor-arg value="12" type="int" index="1"/>
+        <constructor-arg value="34" type="int" index="0"/>
+    </bean>
 
 
 </beans>
