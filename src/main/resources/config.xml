@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.example.demo4.Certi" name="cer">
+        <constructor-arg value="Spring"/>
+    </bean>
+
+    <bean class="com.example.demo4.Person" name="person">
+        <constructor-arg>
+            <value>Undertaker</value>
+        </constructor-arg>
+
+        <constructor-arg>
+            <value>25</value>
+        </constructor-arg>
+
+        <constructor-arg ref="cer"/>
+
+    </bean>
+
+
+
+</beans>
